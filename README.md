@@ -15,9 +15,7 @@ This is a solution to the [Huddle landing page with curved sections challenge on
 
 ### Screenshot
 
-![FireShot Capture 084 - Frontend Mentor - Huddle landing page with curved sections_ - fastidious-bunny-14f6b7 netlify app](https://user-images.githubusercontent.com/106422023/221500281-84d219ac-b584-4488-895b-afddfc1fc910.png)
-![FireShot Capture 085 - Frontend Mentor - Huddle landing page with curved sections_ - fastidious-bunny-14f6b7 netlify app](https://user-images.githubusercontent.com/106422023/221500288-4546c664-1bd4-4390-b20d-61ee8b554c5b.png)
-
+![FireShot Capture 086 - Frontend Mentor - Huddle landing page with curved sections_ - fastidious-bunny-14f6b7 netlify app](https://user-images.githubusercontent.com/106422023/221500692-1c5bafc5-b549-45b4-8348-c78df8a13e7a.png)
 
 ### Links
 
