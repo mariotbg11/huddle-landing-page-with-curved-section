@@ -1,0 +1,349 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium : 600
+Bold: 700
+
+--- 02 COLORS
+
+- Primary: 
+
+- Pink: hsl(322, 100%, 66%)
+- Light Pink: hsl(321, 100%, 78%)
+- Light Red: hsl(0, 100%, 63%)
+
+- Neutral:
+
+- Very Dark Cyan: hsl(192, 100%, 9%)
+- Very Pale Blue: hsl(207, 100%, 98%)
+
+--- 03 BORDER-RADIUS
+
+- Small: 9px
+- Round: 150px
+
+Small: 6px
+
+--- 04 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+:root {
+  --2px: 0.125rem;
+  --4px: 0.25rem;
+  --8px: 0.5rem;
+  --9px: 0.5625rem;
+  --10px: 0.625rem;
+  --12px: 0.75rem;
+  --13px: 0.8125rem;
+  --14px: 0.875rem;
+  --15px: 0.9375rem;
+  --16px: 1rem;
+  --18px: 1.125rem;
+  --20px: 1.25rem;
+  --21px: 1.3125rem;
+  --22px: 1.375rem;
+  --24px: 1.5rem;
+  --26px: 1.625rem;
+  --30px: 1.875rem;
+  --32px: 2rem;
+  --36px: 2.25rem;
+  --40px: 2.5rem;
+  --44px: 2.75rem;
+  --48px: 3rem;
+  --52px: 3.25rem;
+  --54px: 3.375rem;
+  --60px: 3.75rem;
+  --62px: 3.875rem;
+  --64px: 4rem;
+  --70px: 4.375rem;
+  --72px: 4.5rem;
+  --73px: 4.5625rem;
+  --74px: 4.625rem;
+  --80px: 5rem;
+  --86px: 5.375rem;
+  --96px: 6rem;
+  --98px: 6.125rem;
+  --128px: 8rem;
+
+  --font1: "Poppins", sans-serif;
+  --font2: "Open Sans", sans-serif;
+
+  --fw-df: 400;
+  --fw-md: 600;
+  --fw-bd: 700;
+
+  --color-pink: hsl(322, 100%, 66%);
+  --color-lightpink: hsl(321, 100%, 78%);
+  --color-liightred: hsl(0, 100%, 63%);
+  --color-darkcyan: hsl(192, 100%, 9%);
+  --color-paleblue: hsl(207, 100%, 98%);
+}
+
+/* *********************************** */
+/* HEADER */
+/* *********************************** */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--96px);
+  padding: var(--70px) var(--70px) var(--96px);
+}
+
+.logo {
+  height: var(--40px);
+}
+
+.btn-try:link,
+.btn-try:visited {
+  font-family: var(--font2);
+  font-size: var(--14px);
+  font-weight: var(--fw-df);
+  text-decoration: none;
+  color: var(--color-lightpink);
+  padding: var(--8px) var(--30px);
+  border: 1px solid var(--color-lightpink);
+  border-radius: 150px;
+  transition: 0.3s all;
+}
+
+.btn-try:hover,
+.btn-try:active {
+  box-shadow: 0 0 1px 0.1rem hsla(321, 100%, 78%, 0.226);
+}
+
+/* *********************************** */
+/* HERO */
+/* *********************************** */
+.section-hero {
+  padding: var(--96px) 0;
+}
+
+.hero {
+  max-width: 90rem; /* 880px */
+  margin: 0 auto;
+  padding: 0 var(--32px);
+}
+
+.desc {
+  max-width: 40rem; /* 475px */
+  margin: 0 auto;
+  font-family: var(--font2);
+  font-weight: var(--fw-df);
+  font-size: var(--21px);
+  line-height: 1.5;
+  color: var(--color-darkcyan);
+  margin-bottom: var(--44px);
+}
+
+/* *********************************** */
+/* MOCKUP */
+/* *********************************** */
+.section-mockup {
+  padding: 0 0 var(--96px);
+}
+
+.mockup {
+  max-width: 74rem; /* 832px */
+  margin: 0 auto;
+  padding: 0 var(--32px);
+}
+
+.mockup-img {
+  width: 100%;
+}
+
+/* *********************************** */
+/* STATS */
+/* *********************************** */
+.section-stats {
+  padding: 0 0 var(--64px);
+}
+
+.stats {
+  max-width: 74rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--32px);
+}
+
+.stats1,
+.stats2 {
+  margin: 0 auto;
+}
+
+.number-stats {
+  font-family: var(--font2);
+  font-weight: var(--fw-bd);
+  font-size: var(--74px);
+  color: var(--color-darkcyan);
+  margin-bottom: var(--16px);
+}
+
+.head-stats {
+  font-family: var(--font2);
+  font-size: var(--18px);
+  font-weight: var(--fw-df);
+  color: #888;
+}
+
+/* *********************************** */
+/* HOW */
+/* *********************************** */
+.section-how {
+  padding: var(--96px) 0;
+}
+
+.how-desc {
+  font-family: var(--font2);
+  font-size: var(--18px);
+  font-weight: var(--fw-df);
+  color: var(--color-darkcyan);
+}
+
+.how-img {
+  width: 100%;
+}
+
+.how-bg {
+  background-color: var(--color-paleblue);
+}
+
+/* *********************************** */
+/* CTA (Call to Action) */
+/* *********************************** */
+.section-cta {
+  padding: var(--64px) 0;
+}
+
+.cta-head {
+  margin-bottom: var(--30px);
+}
+
+/* *********************************** */
+/* FOOTER */
+/* *********************************** */
+footer {
+  padding: var(--64px) 0 0;
+}
+
+.footer-container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10.5rem;
+  padding: var(--96px) var(--86px);
+}
+
+.foo-bg {
+  background-color: var(--color-darkcyan);
+}
+
+.footer-logo {
+  height: var(--36px);
+  margin-bottom: var(--24px);
+}
+
+.footer-desc {
+  font-family: var(--font2);
+  font-size: var(--18px);
+  font-weight: var(--fw-df);
+  line-height: 1.5;
+  color: var(--color-paleblue);
+  padding: 0 11rem 0 0;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--16px);
+  margin: var(--20px) 0 var(--70px);
+}
+
+.footer-icon {
+  display: flex;
+  column-gap: var(--14px);
+  align-items: center;
+}
+
+.icon-foo {
+  height: 100%;
+}
+
+.footer-social {
+  display: flex;
+  gap: var(--24px);
+}
+
+.icon-social {
+  width: 35px;
+  height: 35px;
+}
+
+.foo-head {
+  font-family: var(--font2);
+  font-size: var(--30px);
+  font-weight: var(--fw-bd);
+  text-transform: uppercase;
+  color: var(--color-paleblue);
+  margin-bottom: var(--22px);
+}
+
+.footer-news {
+  font-family: var(--font2);
+  font-size: var(--18px);
+  font-weight: var(--fw-df);
+  line-height: 1.5;
+  color: var(--color-paleblue);
+  padding: 0 10rem 0 0;
+  margin-bottom: var(--36px);
+}
+
+.form {
+  display: flex;
+  column-gap: var(--36px);
+  justify-content: center;
+}
+
+.form-input {
+  width: 400px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: inherit;
+  padding: 0 var(--12px);
+  font-weight: var(--fw-md);
+  color: var(--color-darkcyan);
+  margin-bottom: var(--12px);
+}
+
+.btn-subs {
+  display: block;
+  font-family: inherit;
+  font-size: var(--16px);
+  font-weight: var(--fw-bd);
+  width: 140px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  color: var(--color-paleblue);
+  background-color: var(--color-pink);
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.btn-subs:hover,
+.btn:active {
+  background-color: var(--color-lightpink);
+}
